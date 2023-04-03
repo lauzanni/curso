@@ -55,16 +55,7 @@ header, footer{
 img.logo_web{
     width: 200px;
 }
-.slide{
-    
-    min-height: 288px;
-    background: #30343F url("../img/funkos-banner.webp") no-repeat left top;  
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    display:flex;
-    flex-direction: column;
-}
+
 .navbar{
    background-color: var(--color-fondo-cabecera); 
    padding: 2em 1.5em;
@@ -91,9 +82,7 @@ img.logo_web{
     justify-content:flex-end;
     justify-items: baseline;
 }
-ul.nav li{
-   /* flex-basis: calc(25% - 20px);*/
-}
+ 
 ul.navbar__submenu{
     display:none;
 }
@@ -103,7 +92,50 @@ ul.navbar__menu:hover ul.navbar__submenu{
     position:absolute;
 
 }
+/*slide*/
+.slide{
+    
+    min-height: 288px;
+    background: #30343F url("../img/funkos-banner.webp") no-repeat left top;  
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    padding:10em;
+}
+ 
+.slide h2{
+    color:var(--color-fuente-secundario);
+    color:var(--color-primario);
 
+    font-size: 3.8em;
+    font-family:var(--font-family-secundaria);
+
+    font-weight:700;
+
+
+}
+.slide p {
+    color:var(--color-primario);
+    font-family:var(--font-family-secundaria);
+    font-size: 1.8em;
+}
+.botonShop{
+    background-color: var(--color-primario);
+    color:var(--color-fuente-primaria);
+   
+    font-family: var(--font-family-primaria);
+    font-size: 1.4em;
+    font-weight: 500;
+   
+    padding:0 5em;
+    text-align: center;
+    vertical-align:center;
+   
+    width: 10em;
+    border-radius: 50px;
+}
 /*main */
 
 /*tarjetas de productos */
@@ -138,9 +170,7 @@ p.texto_info_tarjeta{
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-  
- 
-
+   
 }
 h2.lanzamientos_titulo{
     padding:0.5em;
@@ -197,32 +227,6 @@ div.articles{
     
 }
  
-.slide h2{
-    color:var(--color-fuente-secundario);
-    color:var(--color-primario);
-
-    font-size: 3.8em;
-    font-family:var(--font-family-secundaria);
-
-    font-weight:700;
-
-
-}
-.slide p {
-    color:var(--color-primario);
-    font-family:var(--font-family-secundaria);
-    font-size: 1.8em;
-}
-.slideBoton{
-    background-color: var(--color-primario);
-    color:var(--color-fuente-primaria);
-    width: 16em;
-    font-size: 2em;
-    padding:0.5em ;
-    text-align: center;
-    vertical-align:  center;
-    border-radius: 50px;
-}
 .footer__logo img{
     width: 50%;
     height: auto;
