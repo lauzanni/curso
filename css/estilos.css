@@ -66,21 +66,19 @@ img.logo_web{
    
 
 }
- 
 
- .item{
+.item{
     padding:10px;
     background-color: var(--color-fondo-cabecera);
     width: 100px;
     text-align: center;
- 
- }
+}
 
 .navbar__menu{
     display:flex;
-    /* flex-wrap: nowrap; */
     justify-content:flex-end;
     justify-items: baseline;
+    z-index: 1;
 }
  
 ul.navbar__submenu{
@@ -90,19 +88,40 @@ ul.navbar__menu:hover ul.navbar__submenu{
     display: flex;
     flex-direction: column;
     position:absolute;
+    z-index: 1;
 
 }
 /*slide*/
-.slide{
-    
+.imgSlide{
+ /* The image used */
+     background: #30343F url("../img/funkos-banner.webp") no-repeat left top;  
+ /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
     min-height: 288px;
-    background: #30343F url("../img/funkos-banner.webp") no-repeat left top;  
+ 
+ /* Center and scale the image nicely */
+   
     background-size: cover;
-    background-position: center;
+    border:1px solid red;
+}
+.textSlide{
+     
+    position: absolute;
+    top: 30%;
+    left:5%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 0;
+    width: auto;
+    padding: 20px;
+    text-align: left;
+}
+.slide{
     width: auto;
     display:flex;
     flex-direction: column;
-    padding:10em;
+       
 }
  
 .slide h2{
@@ -113,13 +132,14 @@ ul.navbar__menu:hover ul.navbar__submenu{
     font-family:var(--font-family-secundaria);
 
     font-weight:700;
-
+    padding:9px 0;
 
 }
 .slide p {
     color:var(--color-primario);
     font-family:var(--font-family-secundaria);
     font-size: 1.8em;
+    padding:9px 0;
 }
 .botonShop{
     background-color: var(--color-primario);
@@ -129,11 +149,10 @@ ul.navbar__menu:hover ul.navbar__submenu{
     font-size: 1.4em;
     font-weight: 500;
    
-    padding:0 5em;
+    padding:.5em 4em;
     text-align: center;
     vertical-align:center;
-   
-    width: 10em;
+    
     border-radius: 50px;
 }
 /*main */
