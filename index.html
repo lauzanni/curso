@@ -8,112 +8,165 @@
     </head>
     <body>
       <header> 
-        <img src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP">
-        <nav>
-          <ul>
-            <li>Tienda <span><img src="img" alt="icono-Flecha"/></span>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-            </li>
+        
+        <nav class="navbar">
+          
+          <picture class="navbar__img">
+            <img class="logo_web" src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP">
+          </picture>
+          <ul class="navbar__menu">
+            <li class="item tieneSubmenu">Tienda
+              <ul class="navbar__submenu">
+                <li class="item">item</li>
+                <li class="item">item</li>
+                <li class="item">item</li>
 
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="carrito.html"><img src="" alt="icono-carrito"/></a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+            <li class="item "><a href="carrito.html"><img src="" alt="icono-carrito"/></a></li>
           </ul>
         </nav>
-      </header>
-    
-     
-   
-      <main class="contenedor">
-        <section>
+       </header>
+  
+       
+
+      <div class="slide">
+        
           <h2>Nuevos Ingresos</h2>
           <p>Descubre el próximo Funko para tu colección</p>
-          <a class="botonShop" href="tienda.html">Shop</a>
-        </section>
+          <span><a class="botonShop" href="tienda.html">Shop</a></span>
+        
+      </div>
+      <main class="contenedor">
+        
         <section>
-          <article class="impar">
-              <div>
-                <p>
+
+          <article class="tarjeta_impar">
+            
+              <div class="info_tarjeta">
+                <p class="texto_info_tarjeta">
                   <h2>Star Wars & The Mandolarian</h2>
                   <h4>Disfruta de una saga que sigue agregando personajes a su colección.</h4>
                 </p>
                 <a href="coleccion.html">VER COLECCIÓN</a>
               </div>
-              <img src="img/star-wars/baby-yoda-1.webp" alt="Producto 1" />
+
+              <picture class="imagen_tarjeta">
+                <img class="miniatura" src="./img/star-wars/baby-yoda-1.webp" alt="Producto 1" />
+              </picture>
+              
           </article>
 
-          <article class="par">
-              <div>
+          <article class="tarjeta_par">
+              <div class="info_tarjeta">
                 <p>
                   <h2>Pokemon Indigo</h2>
                   <h4>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</h4>
                 </p>
                 <a href="coleccion.html">VER COLECCIÓN</a>
               </div>
-              <img src="img/pokemon/vulpix-1.webp" alt="Producto 2" />
-          </article>
-
-          <article class="impar">
-            <div>
-              <p>
+              <picture class="imagen_tarjeta">
+                <img class="miniatura" src="./img/pokemon/vulpix-1.webp" alt="Producto 2" />
+              </picture>
+          </article>  
+<!-- 
+          <article class="tarjeta_impar">
+            <div class="info_tarjeta">
+              <p class="texto_info_tarjeta">
                 <h2>Harry Potter</h2>
                 <h4>Revive los recuerdos de una saga llena de magia y encanto.</h4>
               </p>
               <a href="coleccion.html">VER COLECCIÓN</a>
             </div>
-            <img src="img/harry-potter/snape-patronus-1.webp" alt="Producto 3" />
-          </article>
-        </section>
-        <section>
-          <h2>Últimos lanzamientos</h2>
+            <picture class="imagen_tarjeta">
+              <img src="./img/harry-potter/snape-patronus-1.webp" alt="Producto 3" />
+            </picture>
+          </article> -->
 
-          <img src="" alt="flecha-izquierda"/>
-          
-          <article>
-            <span>Nuevo</span>
-            <img src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER"/>
-            <h3>STAR WARS</h3>
-            <h2>STORMTROOPER LIGHTSABER</h2>
-            <h3>$1799,99</h3>
-            <h3 class="cuotas">3 Cuotas sin interés</h3>
-          
-          </article>
-          
-          <article>
-            <span>Nuevo</span>
-            <img src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO"/>
-            <h3>POKEMON</h3>
-            <h2>PIDGEOTTO</h2>
-            <h3>$1799,99</h3>
-            <h3 class="cuotas">3 Cuotas sin interés</h3>
+          <article class="tarjeta_impar">
             
-          </article>
-          
-          <article>
-            <span>Nuevo</span> 
-            <img src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK"/>
-            <h3>HARRY POTTER</h3>
-            <h2>LUNA LOVEGOOD LION</h2>
-            <h3>$1799,99</h3>
-            <h3 class="cuotas">3 Cuotas sin interés</h3>
+            <div class="info_tarjeta">
+              <p class="texto_info_tarjeta">
+                <h2>Harry Potter</h2>
+                <h4>Revive los recuerdos de una saga llena de magia y encanto.</h4>
+              </p>
+              <a href="coleccion.html">VER COLECCIÓN</a>
+            </div>
+
+            <picture class="imagen_tarjeta">
+              <img class="miniatura" src="./img/harry-potter/snape-patronus-1.webp" alt="Producto 3" />
+            </picture>
             
-          </article>
+        </article>
+      </section>
+        <section class="lanzamientos">
+          <h2 class="lanzamientos_titulo">Últimos lanzamientos</h2>
+
           
-          <img src="" alt="flecha-derecha"/>
+          <div class="articles">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="30" height="30" viewBox="0 0 24 24" 
+                style="fill: rgba(0, 0, 0, 1);transform: rotate(0deg);
+                msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);">
+                <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+            </svg>
+
+            <article>
+              <span class="adNuevo">Nuevo</span>
+              <img class="miniatura" src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER"/>
+              <h4>STAR WARS</h4>
+              <h2>STORMTROOPER LIGHTSABER</h2>
+              <h3>$1799,99</h3>
+              <h5 class="cuotas">3 Cuotas sin interés</h5>
+              
+            </article>
+            
+            <article>
+              <span class="adNuevo">Nuevo</span>
+              <img class="miniatura" src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO"/>
+              <h4>POKEMON</h4>
+              <h2>PIDGEOTTO</h2>
+              <h3>$1799,99</h3>
+              <h5 class="cuotas">3 Cuotas sin interés</h5>
+              
+            </article>
+            
+            <article>
+              <span class="adNuevo">Nuevo</span> 
+              <img class="miniatura" src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK"/>
+              <h4>HARRY POTTER</h4>
+              <h2>LUNA LOVEGOOD LION</h2>
+              <h3>$1799,99</h3>
+              <h5 class="cuotas">3 Cuotas sin interés</h5>
+              
+            </article>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="30" height="30" viewBox="0 0 24 24" 
+                style="fill: rgba(0, 0, 0, 1);transform: rotate(180deg);
+                msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);">
+                <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+            </svg>
+          </div>  
+         
 
         </section>
       </main>
       <footer>
-        <ul>
-          <li>Shop</li>
-          <li>Registrarse</li>
-          <li>Ingresar</li>
-          <li>Contacto</li>
-        </ul>
+        <nav class="footer__arriba">
+          <ul>
+            <li>Shop</li>
+            <li>Registrarse</li>
+            <li>Ingresar</li>
+            <li>Contacto</li>
+          </ul>
+          <picture class="footer__logo">
+            <img src="img/branding/isotype.svg" alt="Logo FUNKOSHOP" />
+          </picture>
+        </nav>
         <p>All rights reserved 2023 - FUNKOSHOP </p>
-        <img src="img/branding/" alt="Logo FUNKOSHOP" />
       </footer>
     </body>
 </html>
