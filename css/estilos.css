@@ -84,22 +84,21 @@ img.logo_web{
 ul.navbar__submenu{
     display:none;
 }
-ul.navbar__menu:hover ul.navbar__submenu{
+li.tieneSubmenu:hover ul.navbar__submenu{
     display: flex;
     flex-direction: column;
     position:absolute;
-    z-index: 1;
+     
 
 }
 /*slide*/
 .imgSlide{
  /* The image used */
-     background: #30343F url("../img/funkos-banner.webp") no-repeat left top;  
+     background: #30343F url("../img/funkos-banner.webp") no-repeat left top; 
  /* Add the blur effect */
     filter: blur(3px);
     -webkit-filter: blur(3px);
-  
-    min-height: 288px;
+    height: 40vh;
  
  /* Center and scale the image nicely */
    
@@ -109,8 +108,8 @@ ul.navbar__menu:hover ul.navbar__submenu{
 .textSlide{
      
     position: absolute;
-    top: 30%;
-    left:5%;
+    top: 20vh;
+    left:5vh;
     /* transform: translate(-50%, -50%); */
     z-index: 0;
     width: auto;
