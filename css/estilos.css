@@ -36,8 +36,10 @@ html{
 
 a, li.tieneSubmenu{
     text-decoration: none;
-    font-size:2em;
+    font-size:2rem;
     color:inherit;
+    align-content: end;
+    display: flex;
 }
 
 ul, ol{
@@ -53,44 +55,58 @@ header, footer{
 
 /*header */
 img.logo_web{
-    width: 200px;
+    width: 16vw;
 }
 
 .navbar{
    background-color: var(--color-fondo-cabecera); 
-   padding: 2em 1.5em;
-   min-height: 80px;
+   padding: 2rem 1.5rem;
+   min-height: 8rem;
    display:flex;
+   flex-direction: row;
    justify-content:space-between;
-   justify-items:center;
    
-
-}
-
-.item{
-    padding:10px;
-    background-color: var(--color-fondo-cabecera);
-    width: 100px;
-    text-align: center;
-}
-
-.navbar__menu{
-    display:flex;
-    justify-content:flex-end;
-    justify-items: baseline;
-    z-index: 1;
 }
  
-ul.navbar__submenu{
-    display:none;
+
+ul.navbar__menu{
+    display:flex;
+    justify-content:center;
+   
+}
+li.item{
+    padding:0;
+    background-color: var(--color-fondo-cabecera);
+    width: 9vw;
+    align-items:center;
+    flex-direction: row;
+    display:flex;
+    justify-content: center;    
+}
+
+li ul.navbar__submenu{
+    display: none;
+   
 }
 li.tieneSubmenu:hover ul.navbar__submenu{
     display: flex;
     flex-direction: column;
-    position:absolute;
-     
-
+    position:absolute;  
+    top:6rem;
+    z-index:1;
 }
+a.enlace{
+    padding:.4em;
+}
+a.enlace:hover{
+    background-color: var(--color-fuente-secundario);
+    border:1px solid var(--color-h5);
+    border-top:0;
+    border-left:0;
+    width: 100%;
+    justify-content: center;
+}
+
 /*slide*/
 .imgSlide{
  /* The image used */
@@ -101,19 +117,18 @@ li.tieneSubmenu:hover ul.navbar__submenu{
     height: 40vh;
  
  /* Center and scale the image nicely */
-   
     background-size: cover;
-    border:1px solid red;
+     
 }
 .textSlide{
      
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     left:5vh;
     /* transform: translate(-50%, -50%); */
     z-index: 0;
     width: auto;
-    padding: 20px;
+    
     text-align: left;
 }
 .slide{
@@ -127,7 +142,7 @@ li.tieneSubmenu:hover ul.navbar__submenu{
     color:var(--color-fuente-secundario);
     color:var(--color-primario);
 
-    font-size: 3.8em;
+    font-size: 3.8rem;
     font-family:var(--font-family-secundaria);
 
     font-weight:700;
@@ -137,21 +152,27 @@ li.tieneSubmenu:hover ul.navbar__submenu{
 .slide p {
     color:var(--color-primario);
     font-family:var(--font-family-secundaria);
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding:9px 0;
+}
+a.boton{
+ 
+    font-family: var(--font-family-primaria);
+    font-size: 2.4rem;
+    font-weight: 500;
+   
+    
+    text-align: center;
+    vertical-align:center;
+ 
+    line-height: 29px;
+    letter-spacing: 0rem;
+     
 }
 .botonShop{
     background-color: var(--color-primario);
-    color:var(--color-fuente-primaria);
-   
-    font-family: var(--font-family-primaria);
-    font-size: 1.4em;
-    font-weight: 500;
-   
-    padding:.5em 4em;
-    text-align: center;
-    vertical-align:center;
-    
+    color:var(--color-fuente-secundaria);
+    padding:.1rem 4rem;
     border-radius: 50px;
 }
 /*main */
@@ -165,6 +186,7 @@ img.miniatura{
 
 p.texto_info_tarjeta{
      width: 200px;  
+     background-color: red;
 }
 
 .tarjeta_impar{ /*elemento padre tarjeta impar*/
@@ -172,7 +194,8 @@ p.texto_info_tarjeta{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-     margin:0 auto;  
+    margin:0 auto; 
+   
  
  } 
 .tarjeta_par{ /*elemento padre tarjeta par*/
@@ -184,6 +207,34 @@ p.texto_info_tarjeta{
     margin:0 auto;
  
 } 
+ 
+.principal h2{
+    font-size:4.6rem;
+    font-family: var(--font-family-secundaria);
+    color:var(--color-fuente-primaria);
+    font-weight: 500;
+    
+}
+.principal h4{
+    font-size:2.4rem;
+    font-family: var(--font-family-secundaria);
+    color:var(--color-fuente-primaria);
+    font-weight: 400;
+    border-bottom:3px solid red;
+    padding-bottom:.8rem;
+    margin-bottom:.8rem;
+}
+.botonColeccion{
+    background-color: var(--color-fondo-cabecera);  
+    padding:.5rem 4rem;
+    text-align: center;
+    vertical-align:center;
+    border-radius: 50px;
+    color:var(--color-primario);
+}
+ 
+
+/* lanzamientos */
 .lanzamientos{
    display: flex;
    flex-direction: column;
@@ -191,8 +242,8 @@ p.texto_info_tarjeta{
    
 }
 h2.lanzamientos_titulo{
-    padding:0.5em;
-    font-size: 4.6em;
+    padding:0.5rem;
+    font-size: 4.6rem;
     font-family: var(--font-family-secundaria);
 
 }
@@ -200,32 +251,40 @@ span.adNuevo{
     color:var(--color-primario);
     background-color:red;
     position:absolute;
-    top:6px;
+    top:0vh;
+    right:2vw;
     
 }
-article{
-    /* border:1px solid red; */
+
+.articles article.lanzamiento{
+/*sirve para posicionar la caja de NUEVO*/
     position:relative;
+     
 }
 
 .articles h2{
-    font-size: 1.8em;  
+    font-size: 1.8rem;  
     font-weight: 700;
+    
     color:var(--color-fuente-primaria);
- 
+    margin-bottom: .5rem;
+    
 }
-article h3{
-    font-size: 1.6em; 
+.articles h3{
+    margin-bottom: .5rem;
+    font-size: 1.6rem; 
     font-weight: 400;  
     color:var(--color-fuente-secundaria)
 }
-article h4{
-    font-size: 1.4em; 
+.articles h4{
+    margin-bottom: .5rem;
+    font-size: 1.4rem; 
     font-weight: 500;
     color:var(--color-fuente-secundaria); 
 }
-article h5{
-    font-size: 1.2em;   
+.articles h5{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;   
     color:var(--color-h5);
 }
 
@@ -252,7 +311,8 @@ div.articles{
 footer{
     display:grid;
     grid-template-rows: 2fr .5fr;
-    padding:1em 2em;
+    padding:1rem 7vw;
+    
     
 }
 .footer__arriba{
@@ -263,5 +323,5 @@ footer{
 footer p {
     text-align: center;
     display: inline;
-    height: 2em;
+    height: 2rem;
 }

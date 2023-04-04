@@ -16,16 +16,26 @@
           </picture>
           <ul class="navbar__menu">
             <li class="item tieneSubmenu">Tienda
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+              viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+             
               <ul class="navbar__submenu">
-                <li class="item">item</li>
-                <li class="item">item</li>
-                <li class="item">item</li>
-
+               
+                <li class="item"><a class="enlace" href="#">item1</a></li>
+                <li class="item"><a class="enlace" href="#">item2</a></li>
+                <li class="item"><a class="enlace" href="#">item3</a></li>
+ 
               </ul>
             </li>
-            <li class="item"><a href="contacto.html">Contacto</a></li>
-            <li class="item"><a href="login.html">Login</a></li>
-            <li class="item "><a href="carrito.html"><img src="" alt="icono-carrito"/></a></li>
+            <li class="item"><a class="enlace" href="contacto.html">Contacto</a></li>
+            <li class="item"><a class="enlace" href="login.html">Login</a></li>
+            <li class="item ">
+              <a class="enlace" href="carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(250, 250, 250);transform: ;msFilter:;"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle>
+                </svg>
+              </a>
+          </li>
           </ul>
         </nav>
        </header>
@@ -37,13 +47,13 @@
           <div class="textSlide">
             <h2>Nuevos Ingresos</h2>
             <p>Descubre el próximo Funko para tu colección</p>
-            <span><a class="botonShop" href="tienda.html">SHOP</a></span>
+            <button class="botonShop"><a class="boton" href="tienda.html">SHOP</a></button>
         </div>
         
       </div>
       <main class="contenedor">
         
-        <section>
+        <section class="principal">
 
           <article class="tarjeta_impar">
             
@@ -52,7 +62,10 @@
                   <h2>Star Wars & The Mandolarian</h2>
                   <h4>Disfruta de una saga que sigue agregando personajes a su colección.</h4>
                 </p>
-                <a href="coleccion.html">VER COLECCIÓN</a>
+                <button class="botonColeccion">
+                  <a  class="boton" href="coleccion.html">VER COLECCIÓN</a>
+                </button>
+               
               </div>
 
               <picture class="imagen_tarjeta">
@@ -67,8 +80,12 @@
                   <h2>Pokemon Indigo</h2>
                   <h4>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</h4>
                 </p>
-                <a href="coleccion.html">VER COLECCIÓN</a>
+                <button class="botonColeccion">
+                  <a  class="boton" href="coleccion.html">VER COLECCIÓN</a>
+                </button>
+               
               </div>
+
               <picture class="imagen_tarjeta">
                 <img class="miniatura" src="./img/pokemon/vulpix-1.webp" alt="Producto 2" />
               </picture>
@@ -81,7 +98,9 @@
                 <h2>Harry Potter</h2>
                 <h4>Revive los recuerdos de una saga llena de magia y encanto.</h4>
               </p>
-              <a href="coleccion.html">VER COLECCIÓN</a>
+              <button class="botonColeccion">
+                <a  class="boton" href="coleccion.html">VER COLECCIÓN</a>
+              </button>        
             </div>
 
             <picture class="imagen_tarjeta">
@@ -103,7 +122,7 @@
                 <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
             </svg>
 
-            <article>
+            <article class="lanzamiento">
               <span class="adNuevo">Nuevo</span>
               <img class="miniatura" src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER"/>
               <h4>STAR WARS</h4>
@@ -113,7 +132,7 @@
               
             </article>
             
-            <article>
+            <article class="lanzamiento">
               <span class="adNuevo">Nuevo</span>
               <img class="miniatura" src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO"/>
               <h4>POKEMON</h4>
@@ -123,7 +142,7 @@
               
             </article>
             
-            <article>
+            <article class="lanzamiento">
               <span class="adNuevo">Nuevo</span> 
               <img class="miniatura" src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK"/>
               <h4>HARRY POTTER</h4>
