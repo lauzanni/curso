@@ -54,20 +54,27 @@ header, footer{
 /*fin normalizacion */
 
 /*header */
-img.logo_web{
-    width: 16vw;
-}
 
 .navbar{
    background-color: var(--color-fondo-cabecera); 
-   padding: 2rem 1.5rem;
-   min-height: 8rem;
-   display:flex;
+   /* padding: 2rem 1.5rem; */
+   /* min-height: 8rem; */
+   /* display:flex;
    flex-direction: row;
-   justify-content:space-between;
+   justify-content:space-between; */
+    
+   display: grid;
+   grid-template-columns: 2fr .5fr;
+    padding:1rem 5vw;
+    
    
 }
  
+img.logo_web{
+    width: 16vw;
+      
+    
+}
 
 ul.navbar__menu{
     display:flex;
@@ -114,7 +121,7 @@ a.enlace:hover{
  /* Add the blur effect */
     filter: blur(3px);
     -webkit-filter: blur(3px);
-    height: 40vh;
+    height: 50vh;
  
  /* Center and scale the image nicely */
     background-size: cover;
@@ -123,8 +130,9 @@ a.enlace:hover{
 .textSlide{
      
     position: absolute;
-    top: 30vh;
-    left:5vh;
+    top: 28vh;
+    left: 10vh;
+    
     /* transform: translate(-50%, -50%); */
     z-index: 0;
     width: auto;
@@ -297,6 +305,10 @@ div.articles{
    align-items:center;
  }
  
+ div.articles.coleccion{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:3.6em;
+ }
  .contenedor{
     max-width: 90%;
     margin:0 auto ;
@@ -304,17 +316,29 @@ div.articles{
     position:relative;
     
 }
+.contenedor.coleccion{
+  
+ margin:6.8em;
+    display:grid;
+    grid-template-columns: 0.5fr 3fr;
+
+}
+.coleccion .principal h4{
+    border:none;
+}
+
+
+footer{
+    display:grid;
+    grid-template-rows: 2fr .5fr;
+    padding:1rem 5vw;
+    
+    
+}
  
 .footer__logo img{
     width: 50%;
     height: auto;
-}
-footer{
-    display:grid;
-    grid-template-rows: 2fr .5fr;
-    padding:1rem 7vw;
-    
-    
 }
 .footer__arriba{
     display:flex;

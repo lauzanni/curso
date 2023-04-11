@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="css/estilos.css" />
+		<title>HTML 01</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<picture class="navbar__img">
+          <a href="index.html"> 
+            <img class="logo_web" src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP">
+          </a>
+				</picture>
+				<ul class="navbar__menu">
+					<li class="item tieneSubmenu">
+						<a href="tienda.html">Tienda</a>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							style="fill: rgb(255, 255, 255); transform: ; msfilter: ">
+							<path
+								d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+						</svg>
+
+						<ul class="navbar__submenu">
+							<li class="item">
+								<a
+									class="enlace"
+									href="#"
+									>item1</a
+								>
+							</li>
+							<li class="item">
+								<a
+									class="enlace"
+									href="#"
+									>item2</a
+								>
+							</li>
+							<li class="item">
+								<a
+									class="enlace"
+									href="#"
+									>item3</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="item">
+						<a
+							class="enlace"
+							href="contacto.html"
+							>Contacto</a
+						>
+					</li>
+					<li class="item">
+						<a
+							class="enlace"
+							href="login.html"
+							>Login</a
+						>
+					</li>
+					<li class="item">
+						<a
+							class="enlace"
+							href="carrito.html">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="fill: rgb(250, 250, 250); transform: ; msfilter: ">
+								<path
+									d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path>
+								<circle
+									cx="10.5"
+									cy="19.5"
+									r="1.5"></circle>
+								<circle
+									cx="17.5"
+									cy="19.5"
+									r="1.5"></circle>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="contenedor coleccion">
+			<section id="formBusqueda">
+				<form action="">
+					<label for="buscar">Buscar</label>
+					<input type="search" name="buscar" id="buscar" />
+          
+          <label for="ordenar">Ordenar</label>
+					<select name="ordenar" id="ordenar">
+            <option value="mayorMenor-precio">Mayor a Menor Precio</option>
+            <option value="marca">Marcas</option>
+            <option value="alfabetico">Alfabéticamente</option>
+          </select>
+
+          <label for="rangoPrecios">Rango de Precios</label>
+          
+          <label for="minPrecio">Mín</label>          
+					<input type="number" name="minPrecio" id="minPrecio">
+
+          <label for="maxPrecio">Máximo</label>
+					<input type="number" name="maxPrecio" id="maxPrecio">
+
+          <label for="filtro">Filtros</label>
+          <input type="checkbox" name="nuevos" id="nuevos"> Nuevos
+          <input type="checkbox" name="ofertas" id="ofertas"> Ofertas
+          <input type="checkbox" name="especial" id="especial"> Edición Especial
+          <input type="checkbox" name="favoritos" id="favoritos"> Favoritos
+
+          <input type="submit" value="Buscar">
+				</form>
+			</section>
+			<section class="principal">
+		    <div class="articles coleccion">
+				 
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/star-wars/trooper-1.webp"
+							alt="STORMTROOPER LIGHTSABER" />
+						<h4>STAR WARS</h4>
+						<h2>STORMTROOPER LIGHTSABER</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/pokemon/pidgeotto-1.webp"
+							alt="PIDGEOTTO" />
+						<h4>POKEMON</h4>
+						<h2>PIDGEOTTO</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/harry-potter/luna-1.webp"
+							alt="LUNA LOVEGOOD LION MASK" />
+						<h4>HARRY POTTER</h4>
+						<h2>LUNA LOVEGOOD LION</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+				 
+				</div>
+        <div class="articles coleccion">
+				 
+
+					<article class="lanzamiento catalogo">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/star-wars/trooper-1.webp"
+							alt="STORMTROOPER LIGHTSABER" />
+						<h4>STAR WARS</h4>
+						<h2>STORMTROOPER LIGHTSABER</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/pokemon/pidgeotto-1.webp"
+							alt="PIDGEOTTO" />
+						<h4>POKEMON</h4>
+						<h2>PIDGEOTTO</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/harry-potter/luna-1.webp"
+							alt="LUNA LOVEGOOD LION MASK" />
+						<h4>HARRY POTTER</h4>
+						<h2>LUNA LOVEGOOD LION</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+				 
+				</div>
+        <div class="articles coleccion">
+				 
+
+					<article class="lanzamiento catalogo">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/star-wars/trooper-1.webp"
+							alt="STORMTROOPER LIGHTSABER" />
+						<h4>STAR WARS</h4>
+						<h2>STORMTROOPER LIGHTSABER</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/pokemon/pidgeotto-1.webp"
+							alt="PIDGEOTTO" />
+						<h4>POKEMON</h4>
+						<h2>PIDGEOTTO</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+
+					<article class="lanzamiento">
+						<span class="adNuevo">Nuevo</span>
+						<img
+							class="miniatura"
+							src="img/harry-potter/luna-1.webp"
+							alt="LUNA LOVEGOOD LION MASK" />
+						<h4>HARRY POTTER</h4>
+						<h2>LUNA LOVEGOOD LION</h2>
+						<h3>$1799,99</h3>
+						<h5 class="cuotas">3 Cuotas sin interés</h5>
+					</article>
+				 
+				</div>
+			</section>
+			 
+		</main>
+		<footer>
+			<nav class="footer__arriba">
+				<ul>
+					<li>Shop</li>
+					<li>Registrarse</li>
+					<li>Ingresar</li>
+					<li>Contacto</li>
+				</ul>
+				<picture class="footer__logo">
+					<img
+						src="img/branding/isotype.svg"
+						alt="Logo FUNKOSHOP" />
+				</picture>
+			</nav>
+			<p>All rights reserved 2023 - FUNKOSHOP</p>
+		</footer>
+	</body>
+</html>
