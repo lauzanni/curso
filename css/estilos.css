@@ -7,6 +7,7 @@
     --color-fuente-secundaria:#333333;
     --color-fondo-cabecera:#30343F;
     --color-fuente-secundario:#4F4F4F;
+    --color-fuente-th-tabla:#1F1F1F;
     --color-boton:#30343F;
     --color-boton-nuevo:#FF3333;
     --color-h5: #1D84B5;
@@ -50,6 +51,12 @@ header, footer{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
 }
+header{
+    position:-webkit-sticky; /*safari*/
+    position:sticky;
+    top:0;
+    z-index:99;
+}
  
 /*fin normalizacion */
 
@@ -66,6 +73,8 @@ header, footer{
    display: grid;
    grid-template-columns: 2fr .5fr;
     padding:1rem 5vw;
+ 
+    /* height: 10vh; */
     
    
 }
@@ -99,21 +108,26 @@ li.tieneSubmenu:hover ul.navbar__submenu{
     display: flex;
     flex-direction: column;
     position:absolute;  
-    top:6rem;
+    top:5rem;
     z-index:1;
 }
-a.enlace{
+a.enlace,a.enlacePie{
     padding:.4em;
 }
-a.enlace:hover{
+a.enlace:hover, a.enlacePie:hover{
     background-color: var(--color-fuente-secundario);
-    border:1px solid var(--color-h5);
+    border:.0px solid var(--color-h5);
     border-top:0;
     border-left:0;
     width: 100%;
+     
     justify-content: center;
 }
-
+ a.enlacePie:hover{
+    justify-content: left;
+    /* justify-items:center ;
+      */
+} 
 /*slide*/
 .imgSlide{
  /* The image used */
@@ -291,7 +305,7 @@ span.adNuevo{
     font-weight: 500;
     color:var(--color-fuente-secundaria); 
 }
-.articles h5{
+article h5{
     margin-bottom: .5rem;
     font-size: 1.2rem;   
     color:var(--color-h5);
@@ -305,10 +319,6 @@ div.articles{
    align-items:center;
  }
  
- div.articles.coleccion{
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom:3.6em;
- }
  .contenedor{
     max-width: 90%;
     margin:0 auto ;
@@ -316,6 +326,11 @@ div.articles{
     position:relative;
     
 }
+/*coleccion */
+div.articles.coleccion{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:3.6em;
+ }
 .contenedor.coleccion{
   
  margin:6.8em;
@@ -326,23 +341,93 @@ div.articles{
 .coleccion .principal h4{
     border:none;
 }
+/*ficha */
+ .fichaProducto{
+     width: 100vh;
+}
+.ficha h2{
+    font-weight: 700;
+    font-size: 3.8em;
+    color:var(--color-fuente-primaria);
+
+}
+.ficha h2.precio{
+    font-weight: 400;
+    color:var(--color-fuente-secundaria);
+}
+.ficha h3{
+    font-weight: 400;
+    font-size: 2.4em;
+    color:var(--color-fuente-secundaria);
+
+}
+.ficha h4{
+    border:none;
+    font-weight: 500;
+    font-size: 1.6em;
+    color:var(--color-fuente-secundaria);
 
 
+}
+ 
+.fichasProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center ;
+    margin:6em;
+}
+
+p.tituloRelacionados{
+    font-family: var(--font-family-secundaria);
+    font-size: 4.6em;
+    font-weight: 700;
+}
+ article.relacionados  {
+    /* background-color:gray; */
+}
+
+
+/*formulario tienda*/
+fieldset{
+    border:none;
+    margin:0.5rem;
+     
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+ }
+.labelForm{
+    font-size: 2.4rem ;
+
+}
+
+
+/*footer*/
 footer{
     display:grid;
     grid-template-rows: 2fr .5fr;
-    padding:1rem 5vw;
-    
+    padding:4rem 5vw 2rem 5vw;
+    font-size: 2em;
     
 }
  
 .footer__logo img{
-    width: 50%;
+    width: 12.3rem;
     height: auto;
 }
 .footer__arriba{
     display:flex;
     justify-content: space-between;
+    align-items:flex-end;
+  
+    
 
 }
 footer p {

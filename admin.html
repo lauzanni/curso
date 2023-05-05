@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<link rel="stylesheet" href="css/admin.css" />
+	<title>HTML 01</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<picture class="navbar__img">
+				<a href="index.html">
+					<img class="logo_web" src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP" />
+				</a>
+			</picture>
+			<ul class="navbar__menu">
+				<li class="item tieneSubmenu">
+					<a href="tienda.html">Tienda</a>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						style="fill: rgb(255, 255, 255); transform: ; msfilter: ">
+						<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+					</svg>
+
+					<ul class="navbar__submenu">
+						<li class="item">
+							<a class="enlace" href="#">item1</a>
+						</li>
+						<li class="item">
+							<a class="enlace" href="#">item2</a>
+						</li>
+						<li class="item">
+							<a class="enlace" href="#">item3</a>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="enlace" href="contacto.html">Contacto</a>
+				</li>
+				<li class="item">
+					<a class="enlace" href="login.html">Login</a>
+				</li>
+				<li class="item">
+					<a class="enlace" href="carrito.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							style="fill: rgb(250, 250, 250); transform: ; msfilter: ">
+							<path
+								d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+							</path>
+							<circle cx="10.5" cy="19.5" r="1.5"></circle>
+							<circle cx="17.5" cy="19.5" r="1.5"></circle>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="contenedor">
+		<div class="buscador">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+				style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: ">
+				<path
+					d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z">
+				</path>
+			</svg>
+			<input type="text" placeholder="código, nombre o categoría" />
+		</div>
+		<div class="tituloTabla">
+			<h2>LISTA DE PRODUCTOS</h2>
+			<span class="btAgregarProducto">
+				<a href="./create.html">Agregar 
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						style="fill: rgb(255, 255, 255); transform: ; msfilter: ">
+						<path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
+					</svg>
+				</a>
+			</span>
+		</div>
+		<table class="top">
+			<caption>Listado de Productos</caption>
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Nombre del Producto</th>
+					<th scope="col">Categoría</th>
+					<th scope="col" colspan="2"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="id" scope="row" >1</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">2</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">3</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">4</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">5</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">6</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">7</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">8</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td>
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td>
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">9</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td>
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td>
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">10</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td>
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td>
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">11</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td>
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td>
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">12</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">13</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+				<tr>
+					<td class="id" scope="row">13</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td class="icono">
+						<img src="img/icons/edit_pencil.svg" alt="editar" />
+					</td>
+					<td class="icono">
+						<img src="img/icons/delete_trash.svg" alt="borrar" />
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+	</main>
+	<footer>
+		<nav class="footer__arriba">
+			<ul>
+				<li><a class="enlacePie" href="./tienda.html">Tienda</a></li>
+				<li><a class="enlacePie" href="./registro.html">Registrarse</a></li>
+				<li><a class="enlacePie" href="./iniciarSesion.html">Ingresar</a></li>
+				<li><a class="enlacePie" href="./contacto.html">Contacto</a></li>
+			</ul>
+			<picture class="footer__logo">
+				<img src="img/branding/isotype.svg" alt="Logo FUNKOSHOP" />
+			</picture>
+		</nav>
+		<p>All rights reserved 2023 - FUNKOSHOP</p>
+	</footer>
+</body>
+
+</html>
