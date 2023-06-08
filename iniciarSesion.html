@@ -41,7 +41,7 @@
 					<a class="enlace" href="contacto.html">Contacto</a>
 				</li>
 				<li class="item">
-					<a class="enlace" href="login.html">Login</a>
+					<a class="enlace" href="iniciarSesion.html">Login</a>
 				</li>
 				<li class="item">
 					<a class="enlace" href="carrito.html">
@@ -60,30 +60,34 @@
 	</header>
 
 	<main class="contenedor ingresar">
-        <h2>Iniciar Sesión</h2>
-        <form>
-            <label for="email"></label>
-            <fieldset>
-                <legend class="labelForm" for="email">
-                    Correo Electrónico
-                </legend>
-            	<input type="text" id="email" placeholder="usuario@dominio.ext"/>
-                <legend class="labelForm" for="passw">
-                  Contraseña: 
-                </legend>
-            	<input type="password" id="passw" placeholder="****"/>
-            </fieldset> 
-        </form>
-	
-	
+		<h2>Iniciar Sesión</h2>
+		<form>
+			<fieldset>
+				<legend class="labelForm" for="email">
+					Correo Electrónico:
+				</legend>
+				<input type="text" id="email" placeholder="usuario@dominio.ext"/>
+
+				<legend class="labelForm" for="passw">
+					Contraseña:
+				</legend>
+				<input type="password" id="passw" placeholder="****"/>
+			</fieldset>
+			<a href="./admin.html"><button type="button"> Inicia Sesión</button></a>
+			<input type="checkbox" id="recuerda">
+			<label for="recuerda">Recuérdame</label>
+			<a href="">Recuerdame la contraseña</a>
+		</form>
+
+
 	</main>
 	<footer>
 		<nav class="footer__arriba">
 			<ul>
-				<li><a class="enlace" href="./tienda.html">Tienda</a></li>
-				<li><a class="enlace" href="./registro.html">Registrarse</a></li>
-				<li><a class="enlace" href="./iniciarSesion.html">Ingresar</a></li>
-				<li><a class="enlace" href="./contacto.html">Contacto</a></li>
+				<li><a class="enlacePie" href="./tienda.html">Tienda</a></li>
+				<li><a class="enlacePie" href="./registro.html">Registrarse</a></li>
+				<li><a class="enlacePie" href="./iniciarSesion.html">Ingresar</a></li>
+				<li><a class="enlacePie" href="./contacto.html">Contacto</a></li>
 			</ul>
 			<picture class="footer__logo">
 				<img src="img/branding/isotype.svg" alt="Logo FUNKOSHOP" />

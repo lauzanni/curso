@@ -199,6 +199,9 @@ a.boton{
 }
 /*main */
 
+main{
+    min-height: 100vh;
+}
 /*tarjetas de productos */
  
  
@@ -412,10 +415,10 @@ fieldset{
 /*footer*/
 footer{
     display:grid;
-    grid-template-rows: 2fr .5fr;
-    padding:4rem 5vw 2rem 5vw;
+    grid-template-rows:1fr 1fr;
+    padding:1rem 5vw 1rem 5vw;
     font-size: 2em;
-    
+    height: 30.5vh;
 }
  
 .footer__logo img{
@@ -426,12 +429,9 @@ footer{
     display:flex;
     justify-content: space-between;
     align-items:flex-end;
-  
-    
-
 }
 footer p {
     text-align: center;
     display: inline;
-    height: 2rem;
+    height: 1vh;
 }

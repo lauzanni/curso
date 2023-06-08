@@ -64,6 +64,25 @@ table td {
     text-align: left;
 }
 table td.icono{
-    
     text-align: right;
+}
+
+main.contenedor.ingresar{
+    min-height: 60vh;
+    padding-top:5vw;
+    width: 40vw;
+    text-align: center; 
+    font-family: var(--font-family-primaria);
+}
+
+main.contenedor.ingresar h2{
+    font-size:4.2rem;
+    font-family:var(--font-family-secundaria);
+    font-weight:700;
+    color: var(--color-fuente-th-tabla);
+    text-align: left;
+}
+
+main .labelForm{
+    text-align: left;
 }
