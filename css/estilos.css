@@ -411,6 +411,10 @@ fieldset{
 
 }
 
+/*register.html*/
+form a{
+     all:unset;
+}
 
 /*footer*/
 footer{

@@ -55,7 +55,7 @@
 
 
 	<main class="contenedor crearProducto">
-		<h2 class="titulo">Crear un nuevo producto</h2>
+		<h2 class="titulo">Editar Producto</h2>
 		<form>
 			<fieldset class="camposForm">
 				<div>
@@ -71,6 +71,7 @@
 					<span>Licencia:</span>
 					<select id="licencia">
 						<option value="defecto">Seleccionar</option>
+						<option value="naruto">Naruto Shippuden</option>
 					</select>
 				</div>
 
@@ -110,7 +111,7 @@
 				<div>
 					<!-- <legend class="labelForm" for="descuento">Descuento:</legend> -->
 					<span>Descuento:</span>
-					<input type="text" id="descuento" placeholder="descuento" />
+					<input type="text" id="descuento" placeholder="descuento" value="10%" />
 				</div>
 				
 				<div>
@@ -118,6 +119,7 @@
 					<span>Cuotas:</span>
 					<select id="cuotas">
 						<option value="defecto">Seleccionar</option>
+						<option value="6cuotas">6 Cuotas sin interés</option>
 					</select>
 				</div>
 				
@@ -131,9 +133,20 @@
 				</div>
 				
 			</fieldset>
+			<div class="imgProducto">
+				<figure>
+					<img src="./img/harry-potter/harry-1.webp" />
+					 <figcaption>Frente</figcaption>
+				</figure>
+				<figure>
+					<img src="./img/harry-potter/harry-box.webp" />
+					 <figcaption>Dorso</figcaption>
+				</figure>
+
+			</div>
 			<div class="camposForm">
-				<button type="button"><a href="./admin.html">Agregar Producto</a></button>
-				<button type="button">Limpiar formulario</button>
+				<button type="button"><a href="./admin.html">Modificar Producto</a></button>
+				<button type="button">Cancelar</button>
 			</div>
 
 		</form>

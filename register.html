@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/estilos.css" />
+	<link rel="stylesheet" href="css/admin.css" />
 	<title>HTML 01</title>
 </head>
 
@@ -13,7 +14,7 @@
 		<nav class="navbar">
 			<picture class="navbar__img">
 				<a href="index.html">
-					<img class="logo_web" src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP">
+					<img class="logo_web" src="img/branding/logo_light_horizontal.svg" alt="logo de FUNKOSHOP" />
 				</a>
 			</picture>
 			<ul class="navbar__menu">
@@ -40,7 +41,7 @@
 					<a class="enlace" href="contacto.html">Contacto</a>
 				</li>
 				<li class="item">
-					<a class="enlace" href="iniciarSesion.html">Salir</a>
+					<a class="enlace" href="iniciarSesion.html">Login</a>
 				</li>
 				<li class="item">
 					<a class="enlace" href="carrito.html">
@@ -58,65 +59,42 @@
 		</nav>
 	</header>
 
-	<main class="contenedor">
+	<main class="contenedor ingresar">
+		<h2>Crear una cuenta</h2>
+		<h3>Completa el siguiente formulario y entra al mundo de los Funkos</h3>
+		<form>
+			<fieldset>
+				<legend class="labelForm" for="nombre"> 
+					Nombre: 
+				</legend>
+				<input type="text" id="nombre"/>
+				<legend class="labelForm" for="apellido"> 
+					Apellido: 
+				</legend>
+				<input type="text" id="apellido"/>
+				
+				<legend class="labelForm" for="email">
+					Correo Electrónico:
+				</legend>
+				<input type="text" id="email" placeholder="usuario@dominio.ext"/>
 
-		<section class="principal ficha ">
+				<legend class="labelForm" for="passw">
+					Contraseña:
+				</legend>
+				<input type="password" id="passw" placeholder="****"/>
 
-			<article class="tarjeta_par">
+				<legend class="labelForm" for="passw">
+					Repite la Contraseña:
+				</legend>
+				<input type="password" id="passw" placeholder="****"/>
+			</fieldset>
+			<a href="./admin.html"><button type="button"> Registrarse</button></a>
+			<input type="checkbox" value="aceptaTerminos">
+			<label for="recuerda"> 
+				 Acepta los <a href="#" class="otra">Términos y condiciones de uso</a>
+			</label>
+		</form>
 
-				<div class="info_tarjeta">
-					<p class="texto_info_tarjeta">
-						<h4>STAR WARS</h4>
-						<h2>BABY YODA BLUEBALL</h2>
-						<h3>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</h3>
-						<h2 class="precio">$ 1799,99.-</h2>
-					</p>
-
-					<button class="masMenos">-</button>
-					<input type="number" name="numProd id="numProd" min="0" max="10">
-					<button class="masMenos">+</button>
-					<button class="comprar">Agregar al Carrito</button>
-
-				</div>
-
-				<picture class="imagen_tarjeta">
-					<img class="miniatura" src="./img/star-wars/baby-yoda-1.webp" alt="Producto 1" />
-				</picture>
-
-			</article>
-			<p class="tituloRelacionados">Productos Relacionados</p>
-			<div class="fichasProductos">	
-					
-				<article class="relacionados">
-
-					<img class="miniatura" src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER" />
-					<h4>STAR WARS</h4>
-					<h2>STORMTROOPER LIGHTSABER</h2>
-					<h3>$1799,99</h3>
-					<h5 class="cuotas">3 Cuotas sin interés</h5>
-				</article>
-
-				<article class="relacionados">
-
-					<img class="miniatura" src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO" />
-					<h4>POKEMON</h4>
-					<h2>PIDGEOTTO</h2>
-					<h3>$1799,99</h3>
-					<h5 class="cuotas">3 Cuotas sin interés</h5>
-				</article>
-
-				<article class="relacionados">
-
-					<img class="miniatura" src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK" />
-					<h4>HARRY POTTER</h4>
-					<h2>LUNA LOVEGOOD LION</h2>
-					<h3>$1799,99</h3>
-					<h5 class="cuotas">3 Cuotas sin interés</h5>
-				</article>
-
-			</div>
-
-		</section>
 
 	</main>
 	<footer>

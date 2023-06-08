@@ -132,3 +132,16 @@ div.camposForm{
     padding:1em;
 
 }
+
+/*edit.html*/
+.imgProducto{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 90%;
+}
+.imgProducto img{
+    width: 20rem;
+    height: auto;
+    
+}
