@@ -1,88 +1,134 @@
 .contenedor {
-    width: 90vw ;
+    width: 90vw;
     display: flex;
     flex-direction: column;
 }
 
-.buscador{
-    display:flex;
+.buscador {
+    display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin:2rem;
+    margin: 2rem;
 }
-.buscador input{
+
+.buscador input {
     width: 30vw;
 }
 
-table{
+table {
     width: 100%;
-     
-} 
-caption{
-    display:none;
+
 }
-.tituloTabla{
+
+caption {
+    display: none;
+}
+
+.tituloTabla {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    align-content:space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
     justify-content: space-between;
     align-items: center;
 }
 
 
 .tituloTabla h2 {
-    
+
     text-align: left;
     font-size: 4.2rem;
     font-weight: 700;
     font-family: var(--font-family-secundaria);
 }
-.tituloTabla span.btAgregarProducto{
+
+.tituloTabla span.btAgregarProducto {
     text-align: right;
     font-size: 2.4rem;
     font-weight: 700;
     font-family: var(--font-family-primaria);
 
-} 
-.tituloTabla span.btAgregarProducto svg{
-    background-color:var(--color-boton-nuevo);    
-} 
+}
 
-table th{
+.tituloTabla span.btAgregarProducto svg {
+    background-color: var(--color-boton-nuevo);
+}
+
+table th {
     text-align: left;
     font-size: 2.4rem;
-    color:var(--color-fuente-th-tabla);
+    color: var(--color-fuente-th-tabla);
 }
 
 table td {
     font-size: 2.4rem;
     font-weight: 500;
     font-family: var(--font-family-primaria);
-  
-    
+
+
     text-align: left;
 }
-table td.icono{
+
+table td.icono {
     text-align: right;
 }
 
-main.contenedor.ingresar{
+main.contenedor.ingresar , main.contendor.crearProducto{
     min-height: 60vh;
-    padding-top:5vw;
+    padding-top: 5vw;
     width: 40vw;
-    text-align: center; 
+    text-align: center;
     font-family: var(--font-family-primaria);
 }
 
-main.contenedor.ingresar h2{
-    font-size:4.2rem;
-    font-family:var(--font-family-secundaria);
-    font-weight:700;
+main.contenedor.ingresar h2 {
+    font-size: 4.2rem;
+    font-family: var(--font-family-secundaria);
+    font-weight: 700;
     color: var(--color-fuente-th-tabla);
     text-align: left;
 }
 
-main .labelForm{
+main .labelForm {
     text-align: left;
+}
+
+main.contenedor.crearProducto{
+/* background-color: gray; */
+}
+main  .camposForm    {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:5em;
+}
+main h2.titulo{
+    text-align: left;
+    font-size: 4.2rem;
+    font-weight: 700;   
+    font-family: var(--font-family-secundaria);
+}
+textarea{
+    width:90%;
+    text-align: left;
+    padding:1em;
+    margin:1em;
+}
+main input#descuento,input#stock,input#precio,input#SKU{
+    border:0;
+    border-bottom:1px solid red;
+}
+main input#SKU, input#precio{
+    width: 12em;
+    text-align: center;
+
+}
+main input#stock{
+    width: 3em;
+}
+div.camposForm{
+    width:70%;
+     
+    padding:1em;
+
 }

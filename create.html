@@ -5,6 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/estilos.css" />
+	<link rel="stylesheet" href="css/admin.css" />
+
 	<title>HTML 01</title>
 </head>
 
@@ -53,53 +55,86 @@
 
 
 	<main class="contenedor crearProducto">
-		<h2>Crear un nuevo producto</h2>
+		<h2 class="titulo">Crear un nuevo producto</h2>
 		<form>
-			<fieldset>
-				<legend class="labelForm" for="categoria">
-					Categoría:
-				</legend>
-				<select id="categoria">
-					<option value="defecto">Seleccionar</option>
-				</select>
+			<fieldset class="camposForm">
+				<div>
+					<!-- <legend class="labelForm" for="categoria">Categoría:</legend> -->
+					<span>Categoría</span>
+					<select id="categoria">
+						<option value="defecto">catSeleccionar</option>
+					</select>
+				</div>
 
-				<legend class="labelForm" for="licencia">
-					Licencia:
-				</legend>
-				<select id="licencia">
-					<option value="defecto">Seleccionar</option>
-				</select>
+				<div>
+					<!-- <legend class="labelForm" for="licencia">Licencia:</legend> -->
+					<span>Licencia:</span>
+					<select id="licencia">
+						<option value="defecto">Seleccionar</option>
+					</select>
+				</div>
+
 			</fieldset>
-			<fieldset>
-				<legend class="labelForm"> Nombre del producto:</legend>
-				<input type="text" id="nombreProducto" placeholder="Kaskashi Hatake Shippuden Saga" />
-				<textarea id="descripción" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+			<fieldset class="camposForm">
+				<div>
+					<!-- <legend class="labelForm"> Nombre del producto:</legend> -->
+					<span>Nombre del Producto: </span>
+					<input type="text" id="nombreProducto" placeholder="Kaskashi Hatake Shippuden Saga" />
+				</div>
+				
 			</fieldset>
-			<fieldset>
-				<legend class="labelForm" for="SKU">SKU:</legend>
-				<input type="text" id="SKU" placeholder="SSK111AB001" />
+			<div>
+				<textarea id="descripción" cols="auto" rows="10" placeholder="Descripción del producto"></textarea>
 
-				<legend class="labelForm" for="precio">Precio:</legend>
-				<input type="text" id="precio" placeholder="$ 0.000,00" />
-
-				<legend class="labelForm" for="stock">Stock:</legend>
+			</div>
+			<fieldset class="camposForm">
+				<div>
+					<!-- <legend class="labelForm" for="SKU">SKU:</legend> -->
+					<span>SKU:</span>
+					<input type="text" id="SKU" placeholder="SSK111AB001" />
+				</div>
+				<div>
+					<!-- <legend class="labelForm" for="precio">Precio:</legend> -->
+					<span>Precio:</span>
+					<input type="text" id="precio" placeholder="$ 0.000,00" />
+				</div>
+				
+			<div>
+				<!-- <legend class="labelForm" for="stock">Stock:</legend> -->
+				<span>Stock:</span>
 				<input type="text" id="stock" placeholder="stock" />
+			</div>
 			</fieldset>
-			<fieldset>
-				<legend class="labelForm" for="descuento">Descuento:</legend>
-				<input type="text" id="descuento" placeholder="descuento" />
 
-				<legend class="labelForm" for="cuotas">Cuotas:</legend>
-				<select id="cuotas">
-					<option value="defecto">Seleccionar</option>
-				</select>
+			<fieldset class="camposForm">
+				<div>
+					<!-- <legend class="labelForm" for="descuento">Descuento:</legend> -->
+					<span>Descuento:</span>
+					<input type="text" id="descuento" placeholder="descuento" />
+				</div>
+				
+				<div>
+					<!-- <legend class="labelForm" for="cuotas">Cuotas:</legend> -->
+					<span>Cuotas:</span>
+					<select id="cuotas">
+						<option value="defecto">Seleccionar</option>
+					</select>
+				</div>
+				
 			</fieldset>
 			<fieldset>
-				<legend class="labelForm" for="imagenes">Imágenes del producto:</legend>
-				<span> No se ha seleccionado ningún archivo.</span>
+				<div>
+					<!-- <legend class="labelForm" for="imagenes">Imágenes del producto:</legend> -->
+					<span>Imágenes:</span>
+					<input type="file"  id="imagen" name="imagen" accept="image/png, image/jpeg">	
+					<!-- <span> No se ha seleccionado ningún archivo.</span> -->
+				</div>
+				
 			</fieldset>
-			<a href="./admin.html"><button type="button">Agregar Producto</button></a>
-			<button type="button">Limpiar formulario</button>
+			<div class="camposForm">
+				<button type="button"><a href="./admin.html">Agregar Producto</a></button>
+				<button type="button">Limpiar formulario</button>
+			</div>
 
 		</form>
 
